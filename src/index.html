@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>MyPortfolie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"  rel="stylesheet" /> -->
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 w-full bg-blue-400 p-4 text-xl text-white">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="https://flowbite.com/" class="flex items-center space-x-2 ">
+            <img src="assets/logo.jpg" alt="Flowbite Logo" class="w-10 h-10 rounded-full">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sokhna Diarra </span>
+        </a>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:text-blue-900">Home</a></li>
+            <li><a href="#skills" class="hover:text-blue-900">Skills</a></li>
+            <li><a href="#projects" class="hover:text-gray-900"> Projects</a></li>
+            <li><a href="#contact" class="hover:text-gray-900"> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('assets/bg.jpg');">
+      <div class="flex flex-col items-center justify-center min-h-screen text-white">
+        <h2 class="text-5xl font-bold text-center">Bienvenue dans mon univers</h2>
+        <h3 class="text-2xl font-bold text-center mt-2">Sokhna Diarra Saliou,passionnée à la création de site web,</h3>
+        <h3 class="text-2xl font-bold text-center mt-2"> est dans ce milieu depuis 2ans</h3>
+      </div>
+      
+    </section>
+  
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 bg-white">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold mb-6 text-center">Skills</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">HTML & CSS</div>
+          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">React & Angular</div>
+          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">Tailwind CSS & Bootstrap</div>
+          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">Base de Données</div>
+          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">PHP, Pyphon, Langage C & Java</div>
+          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">scilab & maxima</div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-white">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold mb-6 text-center">Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="assets/pro1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-blue-500 mb-2">Création site vente en ligne</h4>
+              <p class="text-gray-700">Description: Etant dans la vente de poulets de chair, je veux permettre à mes clients de faire leur commande et être livrés sans faire un appel et déplacement.</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="assets/pro2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-blue-500 mb-2">Devops</h4>
+              <p class="text-gray-700">Description: Je ne veux pas juste me limiter dans le domain de développement Web. C'est pourquoi j'aimerai me lancer dans le <strong>Devops</strong> pour pouvoir moi-même publier mes sites.</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="assets/pro3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-blue-500  mb-2">Créee une Application</h4>
+              <p class="text-gray-700">Description: C'est l'une de mes projets que je plus réaliser pour accomplir mon rêve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Contact Form -->
+    <section id="contact" class="py-12 bg-white">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold mb-6 text-center">Contactez Moi</h3>
+        <form class="max-w-lg mx-auto bg-blue-400 p-8 rounded-lg shadow-md">
+          <div class="mb-4">
+            <label for="name" class="block text-white font-bold mb-2 text-xl" >Nom&Prenom </label>
+            <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded-md">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-white font-bold mb-2 text-xl">Email</label>
+            <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded-md">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-white font-bold mb-2 text-xl">Message</label>
+            <textarea id="message" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white py-3 px-5 rounded hover:bg-blue-800 w-full flex justify-center">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer class="bg-blue-500 p-4 text-2xl text-white">
+      <div class="container mx-auto flex justify-between items-center">
+        <div>&copy; 2024 SDSALIOU.</div>
+        <div class="flex space-x-4">
+          <a href="https://snapchat.com/t/BTL5qtHt"  class="hover:text-blue-900" alt="Suivez-nous sur snapchat" ><i class="fa-brands fa-square-snapchat"></i> snapchat</a>
+          <a href="https://www.instagram.com/mame_diarra_ngane?igsh=MWsweTR4czdhZno5ZA%3D%3D&utm_source=qr"  class="hover:text-blue-900" alt="Suivez-nous sur instagram"><i class="fa-brands fa-instagram"></i> instagram</a>
+          <a href="https://x.com/diarra_ngane?s=21" class="hover:text-blue-900" alt="Suivez-nous sur X" ><i class="fa-brands fa-twitter"></i> X</a>
+          <a href="https://www.linkedin.com/in/sokhna-diarra-ngane-829449311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="hover:text-blue-900"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  <!-- Pour les icons -->
+  <script src="https://kit.fontawesome.com/ffbfc5fdd6.js" crossorigin="anonymous"></script>
+  </body>
+</html>
