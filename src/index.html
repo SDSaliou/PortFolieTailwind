@@ -1,124 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <title>MyPortfolie</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"  rel="stylesheet" /> -->
-</head>
-<body class="bg-gray-100 text-gray-900">
-
-    <!-- Header Section -->
-    <header class="fixed top-0 left-0 w-full bg-blue-400 p-4 text-xl text-white">
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="https://flowbite.com/" class="flex items-center space-x-2 ">
-            <img src="assets/logo.jpg" alt="Flowbite Logo" class="w-10 h-10 rounded-full">
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sokhna Diarra </span>
-        </a>
-        <nav>
-          <ul class="flex space-x-4">
-            <li><a href="#home" class="hover:text-blue-900">Home</a></li>
-            <li><a href="#skills" class="hover:text-blue-900">Skills</a></li>
-            <li><a href="#projects" class="hover:text-gray-900"> Projects</a></li>
-            <li><a href="#contact" class="hover:text-gray-900"> Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  
-    <!-- Hero Section -->
-    <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('assets/bg.jpg');">
-      <div class="flex flex-col items-center justify-center min-h-screen text-white">
-        <h2 class="text-5xl font-bold text-center">Bienvenue dans mon univers</h2>
-        <h3 class="text-2xl font-bold text-center mt-2">Sokhna Diarra Saliou,passionnée à la création de site web,</h3>
-        <h3 class="text-2xl font-bold text-center mt-2"> est dans ce milieu depuis 2ans</h3>
-      </div>
-      
-    </section>
-  
-    <!-- Skills Section -->
-    <section id="skills" class="py-12 bg-white">
-      <div class="container mx-auto">
-        <h3 class="text-3xl font-bold mb-6 text-center">Skills</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">HTML & CSS</div>
-          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">React & Angular</div>
-          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">Tailwind CSS & Bootstrap</div>
-          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">Base de Données</div>
-          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">PHP, Pyphon, Langage C & Java</div>
-          <div class="bg-blue-400 p-6 text-2xl rounded-lg shadow-md text-center text-white">scilab & maxima</div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Projects Section -->
-    <section id="projects" class="py-12 bg-white">
-      <div class="container mx-auto">
-        <h3 class="text-3xl font-bold mb-6 text-center">Projects</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="assets/pro1.jpg" alt="Project 1" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h4 class="text-xl font-bold text-blue-500 mb-2">Création site vente en ligne</h4>
-              <p class="text-gray-700">Description: Etant dans la vente de poulets de chair, je veux permettre à mes clients de faire leur commande et être livrés sans faire un appel et déplacement.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="assets/pro2.jpg" alt="Project 2" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h4 class="text-xl font-bold text-blue-500 mb-2">Devops</h4>
-              <p class="text-gray-700">Description: Je ne veux pas juste me limiter dans le domain de développement Web. C'est pourquoi j'aimerai me lancer dans le <strong>Devops</strong> pour pouvoir moi-même publier mes sites.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="assets/pro3.jpg" alt="Project 3" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h4 class="text-xl font-bold text-blue-500  mb-2">Créee une Application</h4>
-              <p class="text-gray-700">Description: C'est l'une de mes projets que je plus réaliser pour accomplir mon rêve.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Contact Form -->
-    <section id="contact" class="py-12 bg-white">
-      <div class="container mx-auto">
-        <h3 class="text-3xl font-bold mb-6 text-center">Contactez Moi</h3>
-        <form class="max-w-lg mx-auto bg-blue-400 p-8 rounded-lg shadow-md">
-          <div class="mb-4">
-            <label for="name" class="block text-white font-bold mb-2 text-xl" >Nom&Prenom </label>
-            <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded-md">
-          </div>
-          <div class="mb-4">
-            <label for="email" class="block text-white font-bold mb-2 text-xl">Email</label>
-            <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded-md">
-          </div>
-          <div class="mb-4">
-            <label for="message" class="block text-white font-bold mb-2 text-xl">Message</label>
-            <textarea id="message" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
-          </div>
-          <button type="submit" class="bg-blue-600 text-white py-3 px-5 rounded hover:bg-blue-800 w-full flex justify-center">Envoyer</button>
-        </form>
-      </div>
-    </section>
-  
-    <!-- Footer -->
-    <footer class="bg-blue-500 p-4 text-2xl text-white">
-      <div class="container mx-auto flex justify-between items-center">
-        <div>&copy; 2024 SDSALIOU.</div>
-        <div class="flex space-x-4">
-          <a href="https://snapchat.com/t/BTL5qtHt"  class="hover:text-blue-900" alt="Suivez-nous sur snapchat" ><i class="fa-brands fa-square-snapchat"></i> snapchat</a>
-          <a href="https://www.instagram.com/mame_diarra_ngane?igsh=MWsweTR4czdhZno5ZA%3D%3D&utm_source=qr"  class="hover:text-blue-900" alt="Suivez-nous sur instagram"><i class="fa-brands fa-instagram"></i> instagram</a>
-          <a href="https://x.com/diarra_ngane?s=21" class="hover:text-blue-900" alt="Suivez-nous sur X" ><i class="fa-brands fa-twitter"></i> X</a>
-          <a href="https://www.linkedin.com/in/sokhna-diarra-ngane-829449311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="hover:text-blue-900"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-        </div>
-      </div>
-    </footer>
-  <!-- Pour les icons -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Sokhna Diarra</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ffbfc5fdd6.js" crossorigin="anonymous"></script>
-  </body>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-bg { background: linear-gradient(135deg, #7e22ce, #c084fc); }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .typewriter {
+      border-right: .15em solid #7e22ce;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+    }
+    @keyframes typing { from { width: 0 } to { width: 100% } }
+    @keyframes blink-caret { 50% { border-color: transparent; } }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-90 shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="#home" class="text-2xl font-bold text-purple-700">Sokhna Diarra</a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex">
+        <ul class="flex space-x-6 text-lg text-gray-700">
+          <li><a href="#home" class="hover:text-purple-700">Accueil</a></li>
+          <li><a href="#about" class="hover:text-purple-700">À propos</a></li>
+          <li><a href="#skills" class="hover:text-purple-700">Compétences</a></li>
+          <li><a href="#projects" class="hover:text-purple-700">Projets</a></li>
+          <li><a href="#contact" class="hover:text-purple-700">Contact</a></li>
+          <li><a href="https://github.com/SDSaliou" target="_blank" class="hover:text-purple-700"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Burger Menu -->
+      <button id="menu-btn" class="md:hidden text-purple-700 text-3xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden bg-white border-t border-purple-100 shadow-md md:hidden">
+      <ul class="flex flex-col text-center text-lg py-4 space-y-2 text-gray-700">
+        <li><a href="#home" class="hover:text-purple-700">Accueil</a></li>
+        <li><a href="#about" class="hover:text-purple-700">À propos</a></li>
+        <li><a href="#skills" class="hover:text-purple-700">Compétences</a></li>
+        <li><a href="#projects" class="hover:text-purple-700">Projets</a></li>
+        <li><a href="#contact" class="hover:text-purple-700">Contact</a></li>
+        <li><a href="https://github.com/SDSaliou" target="_blank" class="hover:text-purple-700">GitHub</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-purple-50 to-white text-center px-4">
+    <img src="assets/mdn.jpg" alt="Photo de profil" class="w-60 h-45 rounded-full shadow-xl mb-6 border-4 border-purple-400">
+    <h1 class="text-5xl font-bold text-purple-800 mb-2 typewriter">Une apprenante en</h1>
+    <p class="text-lg text-gray-700 max-w-xl">Développeuse Web Full-Stack & Data Engineer guidée par la <strong>création, l’innovation et l’automatisation</strong>.</p>
+    <a href="#projects" class="mt-8 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition">Voir mes projets</a>
+  </section>
+
+  <!-- À propos -->
+  <section id="about" class="py-20 bg-white fade-in px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Photo à gauche -->
+      <div class="flex justify-center">
+        <img src="assets/bg.jpg" alt="Sokhna Diarra" class="rounded-2xl shadow-2xl w-80 h-80 object-cover border-4 border-purple-300 transform hover:scale-105 transition">
+      </div>
+      <!-- Texte à droite -->
+      <div>
+        <h2 class="text-3xl font-bold text-purple-700 mb-4">À propos de moi</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Je suis <strong>Mame Mariama</strong>, passionnée par la <strong>modélisation mathématique</strong>, le <strong>développement web</strong> et le <strong>data engineering</strong>.
+          Curieuse et créative, j’aime transformer les données et le code en solutions réelles et intuitives.
+        </p>
+        
+        <p class="text-lg text-gray-700 mt-4">
+          Animée par la volonté de relier la <strong>modélisation mathématique</strong>, le <strong>calcul scientifique</strong> et les <strong>technologies modernes</strong>, j’aime comprendre le comportement des systèmes complexes et traduire cette logique en solutions concrètes. 
+          J’utilise des outils comme <strong>Python (NumPy, Pandas, SciPy)</strong>, <strong>Scilab</strong> et <strong>LaTeX</strong> pour concevoir, simuler et documenter mes modèles de manière claire et rigoureuse. 
+          <br><br>
+          J’explore également la <strong>Data Engineering</strong>: collecte, transformation et visualisation des données à grande échelle avec des technologies comme <strong>Spark</strong>, <strong>Kafka</strong> et les bases de données <strong>SQL/NoSQL</strong>.
+          <br><br>
+          En parallèle, je conçois des applications web modernes avec <strong>React/Next</strong> et <strong>Python/Flask</strong>, en cherchant toujours à allier performance, design et automatisation. 
+          Ces compétences me permettent de créer des projets complets de la modélisation scientifique jusqu’à la mise en valeur des données dans des interfaces intuitives répondant aux besoins concrets du monde de l’entreprise.
+        </p>
+
+        <a href="https://drive.google.com/file/d/1TlHmRtGiVbzsH-uixiWUrP8I-3u9P8ll/view?usp=drive_link" class="inline-block mt-6 bg-purple-600 text-white px-5 py-3 rounded-lg hover:bg-purple-800 transition">Mon CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills" class="py-20 bg-purple-50 text-center fade-in px-4">
+    <h2 class="text-3xl font-bold text-purple-700 mb-10">Mes Compétences</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"><i class="fab fa-html5 text-4xl text-purple-600 mb-2"></i><p>HTML / CSS / Tailwind</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"><i class="fab fa-js text-4xl text-purple-600 mb-2"></i><p>React /Next/ Node.js/ Express</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"><i class="fab fa-python text-4xl text-purple-600 mb-2"></i><p>Python / Pandas / Fake</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"><i class="fas fa-database text-4xl text-purple-600 mb-2"></i><p>PostgreSQL/ MySQL/ Redis/ No4j / MongoDB</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"><i class="fab fa-jenkins text-4xl text-purple-600 mb-2"></i><p>CI/CD - Jenkins</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"><i class="fab fa-aws text-4xl text-purple-600 mb-2"></i><p>AWS / Cloud</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"><i class="fas fa-network-wired text-4xl text-purple-600 mb-2"></i><p>Kafka / NiFi</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"><i class="fas fa-laptop-code text-4xl text-purple-600 mb-2"></i><p>PHP / API / Flask</p></div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects" class="py-20 bg-white text-center fade-in px-4">
+    <h2 class="text-3xl font-bold text-purple-700 mb-10">Mes Projets</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      
+      <!-- Projet Hôpital -->
+      <div class="relative group bg-white shadow-lg rounded-xl overflow-hidden transform hover:-translate-y-2 transition">
+        <img src="assets/hopital.png" alt="Site Hôpital" class="w-full h-52 object-cover group-hover:scale-110 transition">
+        <div class="absolute inset-0 bg-purple-800 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+          <h3 class="text-2xl font-bold text-white mb-3">Site Hôpital</h3>
+          <div class="space-x-3">
+            <a href="https://gestion-hopital-chi.vercel.app/" target="_blank" class="bg-white text-purple-700 px-4 py-2 rounded-lg font-semibold hover:bg-purple-200">Voir le site</a>
+            <a href="https://github.com/SDSaliou" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-900">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet Pipeline -->
+      <div class="relative group bg-white shadow-lg rounded-xl overflow-hidden transform hover:-translate-y-2 transition">
+        <img src="assets/data.png" alt="Pipeline Data" class="w-full h-52 object-cover group-hover:scale-110 transition">
+        <div class="absolute inset-0 bg-purple-800 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+          <h3 class="text-2xl font-bold text-white mb-3">Pipeline Data</h3>
+          <a href="https://github.com/SDSaliou/ProjectDATAFLOW360/tree/main/SDSaliou" target="_blank" class="bg-white text-purple-700 px-4 py-2 rounded-lg font-semibold hover:bg-purple-200">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Projet DEV -->
+      <div class="relative group bg-white shadow-lg rounded-xl overflow-hidden transform hover:-translate-y-2 transition">
+        <img src="assets/mysqlpostgres.jpg" alt="DevOps Automation" class="w-full h-52 object-cover group-hover:scale-110 transition">
+        <div class="absolute inset-0 bg-purple-800 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+          <h3 class="text-2xl font-bold text-white mb-3">Transfert données MySQL vers PostgreSQL</h3>
+          <a href="http://github.com/SDSaliou/flaskmysqlpostgres" target="_blank" class="bg-white text-purple-700 px-4 py-2 rounded-lg font-semibold hover:bg-purple-200">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-purple-50 text-center fade-in px-4">
+    <h2 class="text-3xl font-bold text-purple-700 mb-10">Contactez-moi</h2>
+    <form id="contact-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <div class="mb-4">
+        <label for="name" class="block text-purple-700 font-bold mb-2">Nom & Prénom</label>
+        <input type="text" id="name" name="name"  required class="w-full p-3 border border-purple-200 rounded-md focus:ring-2 focus:ring-purple-400">
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-purple-700 font-bold mb-2">Email</label>
+        <input type="email" id="email" name="_replyto"  required class="w-full p-3 border border-purple-200 rounded-md focus:ring-2 focus:ring-purple-400">
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-purple-700 font-bold mb-2">Message</label>
+        <textarea id="message" name="message" required class="w-full p-3 border border-purple-200 rounded-md focus:ring-2 focus:ring-purple-400"></textarea>
+      </div>
+      <button type="submit" class="gradient-bg text-white py-3 px-6 rounded-md w-full hover:opacity-90 transition flex items-center justify-center">
+      <span id="btn-text">Envoyer</span>
+      <svg id="loader" class="hidden animate-spin ml-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+      </svg>
+      <svg id="check" class="hidden ml-2 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.586l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd" />
+      </svg>
+    </button>
+
+    <p id="form-status" class="text-center mt-4 text-purple-600 font-semibold"></p>
+  </form>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+    const loader = document.getElementById("loader");
+    const check = document.getElementById("check");
+    const btnText = document.getElementById("btn-text");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault(); // empêche le rechargement
+      status.textContent = "";
+      loader.classList.remove("hidden");
+      check.classList.add("hidden");
+      btnText.textContent = "Envoi...";
+
+      const data = new FormData(form);
+      const response = await fetch("https://formspree.io/f/xqaydrzw", {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      loader.classList.add("hidden");
+
+      if (response.ok) {
+        status.textContent = "✅ Message envoyé avec succès !";
+        status.style.color = "green";
+        check.classList.remove("hidden");
+        form.reset();
+        btnText.textContent = "Envoyer";
+
+        // Supprimer le message après 20 secondes
+        setTimeout(() => {
+          status.textContent = "";
+          check.classList.add("hidden");
+        }, 20000);
+      } else {
+        status.textContent = "❌ Une erreur est survenue, veuillez réessayer.";
+        status.style.color = "red";
+
+        // Supprimer le message d'erreur après 20 secondes aussi
+        setTimeout(() => { status.textContent = ""; }, 20000);
+        
+        btnText.textContent = "Envoyer";
+      }
+    });
+  </script>
+</section>
+
+  <!-- Footer -->
+  <footer class="gradient-bg text-white py-6">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <p class="text-lg">&copy; 2025 Sokhna Diarra - Développeuse Web & Data Engineer</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="https://github.com/SDSaliou" class="hover:text-gray-200"><i class="fab fa-github text-2xl"></i></a>
+        <a href="https://linkedin.com/in/sokhna-diarra-ngane-829449311" class="hover:text-gray-200"><i class="fab fa-linkedin text-2xl"></i></a>
+        <a href="https://x.com/diarra_ngane?s=21" class="hover:text-gray-200"><i class="fab fa-twitter text-2xl"></i></a>
+        <a href="https://www.instagram.com/mame_diarra_ngane" class="hover:text-gray-200"><i class="fab fa-instagram text-2xl"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Animations + Burger -->
+  <script>
+    // Apparition sections
+    const sections = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+
+    // Menu burger
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+
+</body>
 </html>
