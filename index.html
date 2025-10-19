@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Mame Mariama</title>
+  <title>Mame Mariama</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ffbfc5fdd6.js" crossorigin="anonymous"></script>
 
@@ -63,7 +63,7 @@
 
   <!-- Hero -->
   <section id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-purple-50 to-white text-center px-4">
-    <img src="assets/mdn.jpg" alt="Photo de profil" class="w-60 h-45 rounded-full shadow-xl mb-6 border-4 border-purple-400">
+    <img src="assets/ma_photo.jpg" alt="Photo de profil" class="w-60 h-45 rounded-full shadow-xl mb-6 border-4 border-purple-400">
     <h1 class="text-3xl font-bold text-purple-800 mb-2 typewriter">Une apprenante en Développeuse Web Full-Stack & Data Engineer</h1>
     <p class="text-xl text-gray-700 max-w-xl"> Guidée par la <strong>création, l’innovation et l’automatisation</strong>.</p>
     <a href="#projects" class="mt-8 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition">Voir mes projets</a>
@@ -122,7 +122,7 @@
       <!-- Projet Pipeline -->
       <div class="relative group bg-white shadow-lg rounded-xl overflow-hidden transform hover:-translate-y-2 transition">
         <img src="assets/data.png" alt="Pipeline Data" class="w-full h-52 object-cover group-hover:scale-110 transition">
-        <div class="absolute inset-0 bg-purple-800 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+        <div class="absolute inset-0 bg-purple-400 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
           <h3 class="text-2xl font-bold text-white mb-3">Pipeline Data</h3>
           <a href="https://github.com/SDSaliou/ProjectDATAFLOW360/tree/main/SDSaliou" target="_blank" class="bg-white text-purple-700 px-4 py-2 rounded-lg font-semibold hover:bg-purple-200">GitHub</a>
         </div>
@@ -131,17 +131,16 @@
       <!-- Projet DEV -->
       <div class="relative group bg-white shadow-lg rounded-xl overflow-hidden transform hover:-translate-y-2 transition">
         <img src="assets/mysqlpostgres.jpg" alt="DevOps Automation" class="w-full h-52 object-cover group-hover:scale-110 transition">
-        <div class="absolute inset-0 bg-purple-800 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+        <div class="absolute inset-0 bg-purple-400 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
           <h3 class="text-2xl font-bold text-white mb-3">Transfert données MySQL vers PostgreSQL</h3>
           <a href="http://github.com/SDSaliou/flaskmysqlpostgres" target="_blank" class="bg-white text-purple-700 px-4 py-2 rounded-lg font-semibold hover:bg-purple-200">GitHub</a>
         </div>
       </div>
-    </div>
           
       <!-- Projet Hôpital -->
       <div class="relative group bg-white shadow-lg rounded-xl overflow-hidden transform hover:-translate-y-2 transition">
         <img src="assets/hopital.png" alt="Site Hôpital" class="w-full h-52 object-cover group-hover:scale-110 transition">
-        <div class="absolute inset-0 bg-purple-800 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+        <div class="absolute inset-0 bg-purple-400 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
           <h3 class="text-2xl font-bold text-white mb-3">Site Hôpital</h3>
           <div class="space-x-3">
             <a href="https://gestion-hopital-chi.vercel.app/" target="_blank" class="bg-white text-purple-700 px-4 py-2 rounded-lg font-semibold hover:bg-purple-200">Voir le site</a>
@@ -149,7 +148,7 @@
           </div>
         </div>
       </div>
-
+    </div>
   </section>
 
   <!-- Contact -->
@@ -190,7 +189,7 @@
     const btnText = document.getElementById("btn-text");
 
     form.addEventListener("submit", async (e) => {
-      e.preventDefault(); // empêche le rechargement
+      e.preventDefault(); 
       status.textContent = "";
       loader.classList.remove("hidden");
       check.classList.add("hidden");
@@ -208,7 +207,7 @@
       loader.classList.add("hidden");
 
       if (response.ok) {
-        status.textContent = "✅ Message envoyé avec succès !";
+        status.textContent = " Message envoyé avec succès !";
         status.style.color = "green";
         check.classList.remove("hidden");
         form.reset();
@@ -220,7 +219,7 @@
           check.classList.add("hidden");
         }, 20000);
       } else {
-        status.textContent = "❌ Une erreur est survenue, veuillez réessayer.";
+        status.textContent = " Une erreur est survenue, veuillez réessayer.";
         status.style.color = "red";
 
         // Supprimer le message d'erreur après 20 secondes aussi
